@@ -1,197 +1,197 @@
-# Reverse Engineering 
-[![xiosec - Reverse-engineering](https://img.shields.io/static/v1?label=xiosec&message=Reverse-engineering&color=blue&logo=github)](https://github.com/xiosec/Reverse-engineering)
-[![stars - Reverse-engineering](https://img.shields.io/github/stars/xiosec/Reverse-engineering?style=social)](https://github.com/xiosec/Reverse-engineering)
-[![forks - Reverse-engineering](https://img.shields.io/github/forks/xiosec/Reverse-engineering?style=social)](https://github.com/xiosec/Reverse-engineering)
-[![GitHub release](https://img.shields.io/github/release/xiosec/Reverse-engineering?include_prereleases=&sort=semver)](https://github.com/xiosec/Reverse-engineering/releases/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
-[![issues - Reverse-engineering](https://img.shields.io/github/issues/xiosec/Reverse-engineering)](https://github.com/xiosec/Reverse-engineering/issues)
+# Engenharia reversa
+[![xiosec - Engenharia reversa](https://img.shields.io/static/v1?label=xiosec&message=Engenharia reversa&color=blue&logo=github)](https://github.com/xiosec/Engenharia reversa)
+[![stars - Engenharia reversa](https://img.shields.io/github/stars/xiosec/Reverse-engineering?style=social)](https://github.com/xiosec/Reverse-engineering)
+[![forks - Engenharia reversa](https://img.shields.io/github/forks/xiosec/Reverse-engineering?style=social)](https://github.com/xiosec/Reverse-engineering)
+[![Lançamento do GitHub](https://img.shields.io/github/release/xiosec/Reverse-engineering?include_prereleases=&sort=semver)](https://github.com/xiosec/Reverse-engineering/releases/)
+[![Licença](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![problemas - Engenharia reversa](https://img.shields.io/github/issues/xiosec/Reverse-engineering)](https://github.com/xiosec/Reverse-engineering/issues)
 
-<strong>A set of tools for software reverse engineering.</strong><br>
-<a href="#license"><img align="right"  src="resources/images/logo.png"></a>
+<strong>Um conjunto de ferramentas para engenharia reversa de software.</strong><br>
+<a href="#license"><img align="right" src="resources/images/logo.png"></a>
 
 
-<i>In the following tables, you can find the tools you need according to the heading.</i>
-* [Reverse Engineering](https://github.com/xiosec/Reverse-engineering)
-  * [Debugging](#-debugging)
-  * [Disassemblers](#-disassemblers)
+<i>Nas tabelas a seguir, você pode encontrar as ferramentas necessárias de acordo com o título.</i>
+* [Engenharia reversa](https://github.com/xiosec/Reverse-engineering)
+  * [Depuração](#-depuração)
+  * [Desmontadores](#-desmontadores)
   * [Android](#-android)
-  * [Hex Editors](#-hex-editors)
-  * [Binary Format](#-binary-format)
-  * [Binary Analysis](#-binary-analysis)
-  * [Bytecode Analysis](#-bytecode-analysis)
-  * [Dynamic Analysis](#-dynamic-analysis)
-  * [Document Analysis](#-document-analysis)
+  * [Editores Hex](#-hex-editors)
+  * [Formato binário](#-binary-format)
+  * [Análise Binária](#-binary-analysis)
+  * [Análise de Bytecode](#-bytecode-analysis)
+  * [Análise dinâmica](#-dynamic-analysis)
+  * [Análise de Documentos](#-document-analysis)
   * [Scripting](#-scripting)
   * [Mac Decrypt](#-mac-decrypt)
-  * [📔 Reverse Engineering Books](#-reverse-engineering-books)
-  * [📎 Target and Practice](#-target-and-practice)
+  * [📔 Livros de Engenharia Reversa](#-reverse-engineering-books)
+  * [📎 Alvo e prática](#-alvo-e-prática)
 
 
-## ⚙ Debugging
-<i>Debugging Tools</i>
+## ⚙ Depuração
+<i>Ferramentas de depuração</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`WinDbg`** | The WDK is used to develop, test, and deploy Windows drivers. | [Download](https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx) |
-| **`OllyDbg v1.10`** | OllyDbg is a 32-bit assembler level analysing debugger for Microsoft® Windows®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable. | [Download](http://www.ollydbg.de/) |
-| **`OllyDbg v2.01`** | OllyDbg (named after its author, Oleh Yuschuk) is an x86 debugger that emphasizes binary code analysis, which is useful when source code is not available. |[Download](http://www.ollydbg.de/version2.html) |
-| **`x64dbg`** | An open-source x64/x32 debugger for windows. | [Download](http://x64dbg.com/#start) |
-| **`gdb`** | GDB, the GNU Project debugger, allows you to see what is going on `inside` another program while it executes -- or what another program was doing at the moment it crashed. | [Download](https://www.gnu.org/software/gdb/) |
-| **`vdb`** | A combined disassembler/static analysis/symbolic execution/debugger framework. More documentation is in the works. | [github](https://github.com/vivisect/vivisect) |
-| **`lldb`** | LLDB is a next generation, high-performance debugger. It is built as a set of reusable components which highly leverage existing libraries in the larger LLVM Project, such as the Clang expression parser and LLVM disassembler. | [Download](http://lldb.llvm.org/) |
-| **`qira`** | All state is tracked while a program is running, so you can debug in the past. | [Download](http://qira.me/) |
-| **`unicorn`** | Unicorn CPU emulator framework (ARM, AArch64, M68K, Mips, Sparc, X86). | [github](https://github.com/unicorn-engine/unicorn) |
-| **`Immunity Debugger`** | Immunity Debugger's interfaces include the GUI and a command line. The command line is always available at the bottom of the GUI. It allows the user to type shortcuts as if they were in a typical text-based debugger, such as WinDBG or GDB. Immunity has implemented aliases to ensure that your WinDBG users do not have to be retrained and will get the full productivity boost that comes from the best debugger interface on the market. | [Download](https://www.immunityinc.com/products/debugger/) |
-## 🔩 Disassemblers
-<i>Disassemblers</i>
+| **`WinDbg`** | O WDK é usado para desenvolver, testar e implantar drivers do Windows. | [Download](https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx) |
+| **`OllyDbg v1.10`** | OllyDbg é um depurador de análise de nível de assembler de 32 bits para Microsoft® Windows®. A ênfase na análise de código binário o torna particularmente útil em casos onde a fonte não está disponível. | [Download](http://www.ollydbg.de/) |
+| **`OllyDbg v2.01`** | OllyDbg (nomeado em homenagem ao seu autor, Oleh Yuschuk) é um depurador x86 que enfatiza a análise de código binário, o que é útil quando o código-fonte não está disponível. |[Download](http://www.ollydbg.de/version2.html) |
+| **`x64dbg`** | Um depurador x64/x32 de código aberto para Windows. | [Download](http://x64dbg.com/#start) |
+| **`gdb`** | O GDB, o depurador do Projeto GNU, permite que você veja o que está acontecendo `dentro` de outro programa enquanto ele é executado -- ou o que outro programa estava fazendo no momento em que travou. | [Download](https://www.gnu.org/software/gdb/) |
+| **`vdb`** | Um desmontador combinado/análise estática/execução simbólica/framework depurador. Mais documentação está em andamento. | [github](https://github.com/vivisect/vivisect) |
+| **`lldb`** | LLDB é um depurador de última geração e alto desempenho. Ele é construído como um conjunto de componentes reutilizáveis ​​que alavancam fortemente as bibliotecas existentes no Projeto LLVM maior, como o analisador de expressões Clang e o desmontador LLVM. | [Download](http://lldb.llvm.org/) |
+| **`qira`** | Todo o estado é rastreado enquanto um programa está em execução, para que você possa depurar no passado. | [Download](http://qira.me/) |
+| **`unicorn`** | Estrutura do emulador de CPU Unicorn (ARM, AArch64, M68K, Mips, Sparc, X86). | [github](https://github.com/unicorn-engine/unicorn) |
+| **`Immunity Debugger`** | As interfaces do Immunity Debugger incluem a GUI e uma linha de comando. A linha de comando está sempre disponível na parte inferior da GUI. Ela permite que o usuário digite atalhos como se estivessem em um depurador baseado em texto típico, como WinDBG ou GDB. O Immunity implementou aliases para garantir que seus usuários do WinDBG não precisem ser retreinados e obtenham o aumento total de produtividade que vem da melhor interface de depurador do mercado. | [Download](https://www.immunityinc.com/products/debugger/) |
+## 🔩 Desmontadores
+<i>Desmontadores</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`IDA Pro`** | IDA Pro as a disassembler is capable of creating maps of their execution to show the binary instructions that are actually executed by the processor in a symbolic representation (assembly language). | [Download](https://www.hex-rays.com/products/ida/index.shtml) |
-| **`GHIDRA`** | A software reverse engineering (SRE) suite of tools developed by NSA's Research Directorate in support of the Cybersecurity mission. | [Download](https://ghidra-sre.org/) |
-| **`Binary Ninja`** | Our built-in decompiler works with all our architectures at one price and builds on a powerful family of ILs called BNIL. | [Download](https://binary.ninja/) |
-| **`Radare`** | Disassemble (and assemble for) many different architectures. | [Download](http://www.radare.org/r/) |
-| **`Hopper`** | Hopper Disassembler, the reverse engineering tool that lets you disassemble, decompile and debug your applications. | [Download](http://hopperapp.com/) |
-| **`objdump`** | objdump displays information about one or more object files. The options control what particular information to display. | [Download](http://linux.die.net/man/1/objdump) |
-| **`fREedom`** | capstone based disassembler for extracting to binnavi. | [Download](https://github.com/cseagle/fREedom) |
+| **`IDA Pro`** | O IDA Pro como um desmontador é capaz de criar mapas de sua execução para mostrar as instruções binárias que são realmente executadas pelo processador em uma representação simbólica (linguagem de montagem). | [Download](https://www.hex-rays.com/products/ida/index.shtml) |
+| **`GHIDRA`** | Um conjunto de ferramentas de engenharia reversa de software (SRE) desenvolvido pela Diretoria de Pesquisa da NSA em apoio à missão de Segurança Cibernética. | [Download](https://ghidra-sre.org/) |
+| **`Binary Ninja`** | Nosso descompilador integrado funciona com todas as nossas arquiteturas a um preço único e se baseia em uma poderosa família de ILs chamada BNIL. | [Download](https://binary.ninja/) |
+| **`Radare`** | Desmonte (e monte) para muitas arquiteturas diferentes. | [Download](http://www.radare.org/r/) |
+| **`Hopper`** | Hopper Disassembler, a ferramenta de engenharia reversa que permite desmontar, descompilar e depurar seus aplicativos. | [Download](http://hopperapp.com/) |
+| **`objdump`** | objdump exibe informações sobre um ou mais arquivos de objeto. As opções controlam quais informações específicas exibir. | [Download](http://linux.die.net/man/1/objdump) |
+| **`fREedom`** | desmontador baseado em capstone para extração para binnavi. | [Download](https://github.com/cseagle/fREedom) |
 
 ## 📱 Android
-<i>Android tools</i>
-| Name  | Descriptions | Download | 
+<i>Ferramentas Android</i>
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`Android Studio`** | Android Studio provides the fastest tools for building apps on every type of Android device. | [Download](http://developer.android.com/sdk/index.html) |
-| **`APKtool`** | A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications. | [Download](https://ibotpeaches.github.io/Apktool/) |
-| **`dex2jar`** | Tools to work with android .dex and java .class files. | [github](https://github.com/pxb1988/dex2jar) |
-| **`IDA Pro`** | IDA Pro as a disassembler is capable of creating maps of their execution to show the binary instructions that are actually executed by the processor in a symbolic representation (assembly language). | [Download](https://hex-rays.com/ida-pro/) |
-| **`JaDx`** | Dex to Java decompiler. | [github](https://github.com/skylot/jadx) |
-| **`APKinspector`** | APKinspector is a powerful GUI tool for analysts to analyze the Android applications. | [github](https://github.com/honeynet/apkinspector/) |
-| **`objection`** | 📱 objection - runtime mobile exploration | [github](https://github.com/sensepost/objection) |
-| **`Sign.jar`** | Sign.jar automatically signs an apk with the Android test certificate. | [github](https://github.com/appium-boneyard/sign) |
-| **`FindSecurityBugs`** | FindSecurityBugs is a extension for FindBugs which include security rules for Java applications. | [Download](http://findbugs.sourceforge.net/) |
-| **`Quick Android Review Kit (Qark)`** | Tool to look for several security related Android application vulnerabilities | [github](https://github.com/linkedin/qark) |
-| **`AndroBugs Framework`** | AndroBugs Framework is an efficient Android vulnerability scanner that helps developers or hackers find potential security vulnerabilities in Android applications. No need to install on Windows. | [github](https://github.com/AndroBugs/AndroBugs_Framework) |
-| **`Simplify`** | Tool for de-obfuscating android package into Classes.dex which can be use Dex2jar and JD-GUI to extract contents of dex file. | [github](https://github.com/CalebFenton/simplify) |
-| **`Android backup extractor`** | Utility to extract and repack Android backups created with adb backup (ICS+). More info about adb backup here. | [github](https://github.com/nelenkov/android-backup-extractor) |
-| **`Xposed framework`** | Use this forum to chat about xposed framework and modules to modify your device without flashing a custom ROM | [Download](https://forum.xda-developers.com/f/xposed-general.3094/) |
-| **`AndBug`** | AndBug is a debugger targeting the Android platform’s Dalvik virtual machine intended for reverse engineers and developers. | [github](https://github.com/swdunlop/AndBug) |
-| **`Introspy-Android`** | Blackbox tool to help understand what an Android application is doing at runtime and assist in the identification of potential security issues. | [github](https://github.com/iSECPartners/Introspy-Android) |
-| **`android-ssl-bypass`** | This is an Android debugging tool that can be used for bypassing SSL, even when certificate pinning is implemented, as well as other debugging tasks. The tool runs as an interactive console. | [github](https://github.com/iSECPartners/android-ssl-bypass) |
+| **`Android Studio`** | O Android Studio fornece as ferramentas mais rápidas para criar aplicativos em todos os tipos de dispositivos Android. | [Download](http://developer.android.com/sdk/index.html) |
+| **`APKtool`** | Uma ferramenta para engenharia reversa de apps Android binários fechados de terceiros. Ela pode decodificar recursos para uma forma quase original e reconstruí-los após fazer algumas modificações. | [Download](https://ibotpeaches.github.io/Apktool/) |
+| **`dex2jar`** | Ferramentas para trabalhar com arquivos .dex do Android e .class do Java. | [github](https://github.com/pxb1988/dex2jar) |
+| **`IDA Pro`** | O IDA Pro como um desmontador é capaz de criar mapas de sua execução para mostrar as instruções binárias que são realmente executadas pelo processador em uma representação simbólica (linguagem de montagem). | [Download](https://hex-rays.com/ida-pro/) |
+| **`JaDx`** | Descompilador Dex para Java. | [github](https://github.com/skylot/jadx) |
+| **`APKinspector`** | O APKinspector é uma ferramenta GUI poderosa para analistas analisarem os aplicativos Android. | [github](https://github.com/honeynet/apkinspector/) |
+| **`objeção`** | 📱 objeção - exploração móvel em tempo de execução | [github](https://github.com/sensepost/objection) |
+| **`Sign.jar`** | Sign.jar assina automaticamente um apk com o certificado de teste do Android. | [github](https://github.com/appium-boneyard/sign) |
+| **`FindSecurityBugs`** | FindSecurityBugs é uma extensão para FindBugs que inclui regras de segurança para aplicativos Java. | [Download](http://findbugs.sourceforge.net/) |
+| **`Quick Android Review Kit (Qark)`** | Ferramenta para procurar diversas vulnerabilidades de aplicativos Android relacionadas à segurança | [github](https://github.com/linkedin/qark) |
+| **`AndroBugs Framework`** | AndroBugs Framework é um scanner de vulnerabilidades Android eficiente que ajuda desenvolvedores ou hackers a encontrar potenciais vulnerabilidades de segurança em aplicativos Android. Não há necessidade de instalar no Windows. | [github](https://github.com/AndroBugs/AndroBugs_Framework) |
+| **`Simplify`** | Ferramenta para desofuscar pacotes Android em Classes.dex, que pode usar Dex2jar e JD-GUI para extrair conteúdo do arquivo dex. | [github](https://github.com/CalebFenton/simplify) |
+| **`Android backup extractor`** | Utilitário para extrair e reempacotar backups do Android criados com adb backup (ICS+). Mais informações sobre adb backup aqui. | [github](https://github.com/nelenkov/android-backup-extractor) |
+| **`Xposed framework`** | Use este fórum para conversar sobre o Xposed framework e módulos para modificar seu dispositivo sem instalar uma ROM personalizada | [Download](https://forum.xda-developers.com/f/xposed-general.3094/) |
+| **`AndBug`** | AndBug é um depurador direcionado à máquina virtual Dalvik da plataforma Android, destinado a engenheiros reversos e desenvolvedores. | [github](https://github.com/swdunlop/AndBug) |
+| **`Introspy-Android`** | Ferramenta Blackbox para ajudar a entender o que um aplicativo Android está fazendo em tempo de execução e auxiliar na identificação de potenciais problemas de segurança. | [github](https://github.com/iSECPartners/Introspy-Android) |
+| **`android-ssl-bypass`** | Esta é uma ferramenta de depuração do Android que pode ser usada para ignorar SSL, mesmo quando o pinning de certificado é implementado, bem como outras tarefas de depuração. A ferramenta é executada como um console interativo. | [github](https://github.com/iSECPartners/android-ssl-bypass) |
 
-## 🗄 Hex Editors
-<i>Hex Editors</i>
+## 🗄 Editores Hex
+<i>Editores Hexadecimais</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`HxD`** | HxD is a carefully designed and fast hex editor which, additionally to raw disk editing and modifying of main memory (RAM), handles files of any size. | [Download](https://mh-nexus.de/en/hxd/) |
-| **`010 Editor`** | Why is 010 Editor so powerful? Unlike traditional hex editors which only display the raw hex bytes of a file.  | [Download](https://www.sweetscape.com/010editor/) |
-| **`Hex Workshop`** | The Hex Workshop Hex Editor is a set of hexadecimal development tools for Microsoft Windows, combining advanced binary editing with the ease and flexibility of a word processor. | [Download](http://www.hexworkshop.com/) |
-| **`HexFiend`** | A fast and clever open source hex editor for macOS. | [Download](https://hexfiend.com/) |
-| **`Hiew`** | view and edit files of any length in text, hex, and decode modes. | [Download](http://www.hiew.ru/) |
-| **`hecate`** | The Hex Editor From Hell!. | [github](https://github.com/evanmiller/hecate) |
+| **`HxD`** | O HxD é um editor hexadecimal rápido e cuidadosamente projetado que, além da edição de disco bruto e modificação da memória principal (RAM), manipula arquivos de qualquer tamanho. | [Download](https://mh-nexus.de/en/hxd/) |
+| **`010 Editor`** | Por que o 010 Editor é tão poderoso? Ao contrário dos editores hexadecimais tradicionais que exibem apenas os bytes hexadecimais brutos de um arquivo. | [Download](https://www.sweetscape.com/010editor/) |
+| **`Hex Workshop`** | O Hex Workshop Hex Editor é um conjunto de ferramentas de desenvolvimento hexadecimal para Microsoft Windows, combinando edição binária avançada com a facilidade e flexibilidade de um processador de texto. | [Download](http://www.hexworkshop.com/) |
+| **`HexFiend`** | Um editor hexadecimal de código aberto rápido e inteligente para macOS. | [Download](https://hexfiend.com/) |
+| **`Hiew`** | visualize e edite arquivos de qualquer tamanho nos modos texto, hexadecimal e decodificação. | [Download](http://www.hiew.ru/) |
+| **`hecate`** | O editor hexadecimal do inferno!. | [github](https://github.com/evanmiller/hecate) |
 
-## 📐 Binary Format
-<i>Binary Format Tools</i>
+## 📐 Formato binário
+<i>Ferramentas de formato binário</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`Cerbero Profiler`** | Inspecting a file is a primary task for every low-level professional, be it for reversing, malware triage, forensics or software development. | [Download](https://cerbero.io/) |
-| **`Detect It Easy`** | Detect It Easy, or abbreviated “DIE” is a program for determining types of files. | [Download](https://horsicq.github.io/) |
-| **`MachoView`** | MachOView is a visual Mach-O file browser. It provides a complete solution for exploring and in-place editing Intel and ARM binaries. | [Download](http://sourceforge.net/projects/machoview/) |
-| **`codesign`** | Code signing information usage: codesign -dvvv filename. | [Download](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/codesign.1.html) |
+| **`Cerbero Profiler`** | Inspecionar um arquivo é uma tarefa primária para todo profissional de baixo nível, seja para reversão, triagem de malware, perícia ou desenvolvimento de software. | [Download](https://cerbero.io/) |
+| **`Detect It Easy`** | Detect It Easy, ou abreviado “DIE” é um programa para determinar tipos de arquivos. | [Download](https://horsicq.github.io/) |
+| **`MachoView`** | MachOView é um navegador de arquivos Mach-O visual. Ele fornece uma solução completa para explorar e editar no local binários Intel e ARM. | [Download](http://sourceforge.net/projects/machoview/) |
+| **`codesign`** | Uso de informações de assinatura de código: codesign -dvvv nome do arquivo. | [Download](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/codesign.1.html) |
 
-## 🔬 Binary Analysis
-<i>Binary Analysis Resources</i>
+## 🔬 Análise Binária
+<i>Recursos de Análise Binária</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`Mobius Resources`** | Unpacking Virtualization Obfuscators. | [Download](https://www.msreverseengineering.com/research/) |
-| **`bap`** | The Carnegie Mellon University Binary Analysis Platform (CMU BAP) is a suite of utilities and libraries that enables analysis of programs in the machine code representation. | [github](https://github.com/BinaryAnalysisPlatform/bap) |
-| **`angr`** | angr is a platform-agnostic binary analysis framework. | [github](https://github.com/angr/angr) |
+| **`Mobius Resources`** | Descompactando ofuscadores de virtualização. | [Download](https://www.msreverseengineering.com/research/) |
+| **`bap`** | A Plataforma de Análise Binária da Carnegie Mellon University (CMU BAP) é um conjunto de utilitários e bibliotecas que permite a análise de programas na representação de código de máquina. | [github](https://github.com/BinaryAnalysisPlatform/bap) |
+| **`angr`** | angr é uma estrutura de análise binária independente de plataforma. | [github](https://github.com/angr/angr) |
 
-## 🔎 Bytecode Analysis
-<i>Bytecode Analysis Tools</i>
+## 🔎 Análise de Bytecode
+<i>Ferramentas de análise de bytecode</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`dnSpy`** | dnSpy is a debugger and .NET assembly editor. | [github](https://github.com/dnSpy/dnSpy) |
-| **`Bytecode Viewer`** | SIX DIFFERENT JAVA DECOMPILERS, TWO BYTECODE EDITORS, A JAVA COMPILER,PLUGINS, SEARCHING, SUPPORTS LOADING FROM CLASSES, JARS, ANDROID APKS AND MORE. | [Download](https://bytecodeviewer.com/) |
-| **`JPEXS Free Flash Decompiler`** | Opensource flash SWF decompiler and editor. | [github](https://github.com/jindrapetrik/jpexs-decompiler) |
-| **`JD Project`** | The “Java Decompiler project” aims to develop tools in order to decompile and analyze Java 5 “byte code” and the later versions. JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields. JD-Eclipse is a plug-in for the Eclipse platform. It allows you to display all the Java sources during your debugging process, even if you do not have them all. JD-Core is a library that reconstructs Java source code from one or more “.class” files. JD-Core may be used to recover lost source code and explore the source of Java runtime libraries. New features of Java 5, such as annotations, generics or type “enum”, are supported. JD-GUI and JD-Eclipse include JD-Core library. JD-Core, JD-GUI & JD-Eclipse are open source projects released under the GPLv3 License. | [Download](http://java-decompiler.github.io/) | 
+| **`dnSpy`** | dnSpy é um depurador e editor de assembly .NET. | [github](https://github.com/dnSpy/dnSpy) |
+| **`Bytecode Viewer`** | SEIS DESCOMPILADORES JAVA DIFERENTES, DOIS EDITORES DE BYTECODE, UM COMPILADOR JAVA, PLUGINS, PESQUISA, SUPORTA CARREGAMENTO DE CLASSES, JARS, APKS ANDROID E MAIS. | [Download](https://bytecodeviewer.com/) |
+| **`JPEXS Free Flash Decompiler`** | Descompilador e editor flash SWF de código aberto. | [github](https://github.com/jindrapetrik/jpexs-decompiler) |
+| **`Projeto JD`** | O “projeto Java Decompiler” visa desenvolver ferramentas para descompilar e analisar o “byte code” do Java 5 e versões posteriores. O JD-GUI é um utilitário gráfico independente que exibe códigos-fonte Java de arquivos “.class”. Você pode navegar pelo código-fonte reconstruído com o JD-GUI para acesso instantâneo a métodos e campos. O JD-Eclipse é um plug-in para a plataforma Eclipse. Ele permite que você exiba todas as fontes Java durante seu processo de depuração, mesmo que você não tenha todas elas. O JD-Core é uma biblioteca que reconstrói o código-fonte Java de um ou mais arquivos “.class”. O JD-Core pode ser usado para recuperar código-fonte perdido e explorar a fonte de bibliotecas de tempo de execução Java. Novos recursos do Java 5, como anotações, genéricos ou tipo “enum”, são suportados. O JD-GUI e o JD-Eclipse incluem a biblioteca JD-Core. JD-Core, JD-GUI e JD-Eclipse são projetos de código aberto lançados sob a licença GPLv3. | [Download](http://java-decompiler.github.io/) |
 
-## 🔨 Dynamic Analysis
-<i>Dynamic Analysis Tools</i>
+## 🔨 Análise dinâmica
+<i>Ferramentas de Análise Dinâmica</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`Process Explorer v16.42`** | Process Explorer shows you information about which handles and DLLs processes have opened or loaded. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) |
-| **`Process Monitor v3.82`** | Process Monitor is an advanced monitoring tool for Windows that shows real-time file system, Registry and process/thread activity. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) |
-| **`Autoruns for Windows v13.100`** | This utility, which has the most comprehensive knowledge of auto-starting locations of any startup monitor. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns) |
-| **`Noriben`** | Noriben is a Python-based script that works in conjunction with Sysinternals Procmon to automatically collect, analyze, and report on runtime indicators of malware. | [github](https://github.com/Rurik/Noriben) |
-| **`API Monitor`** | API Monitor is a free software that lets you monitor and control API calls made by applications and services. | [Download](http://www.rohitab.com/apimonitor) |
-| **`INetSim`** | INetSim is a software suite for simulating common internet services in a lab environment, e.g. for analyzing the network behaviour of unknown malware samples. | [Download](https://www.inetsim.org/) |
-| **`SmartSniff`** | SmartSniff is a network monitoring utility that allows you to capture TCP/IP packets that pass through your network adapter. | [Download](http://www.nirsoft.net/utils/smsniff.html) |
-| **`TCPView`** | TCPView is a Windows program that will show you detailed listings of all TCP and UDP endpoints on your system, including the local and remote addresses and state of TCP connections. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview) |
-| **`Wireshark`** | Wireshark is the world’s foremost and widely-used network protocol analyzer. | [Download](https://www.wireshark.org/download.html) |
-| **`Fakenet`** | FakeNet is a tool that aids in the dynamic analysis of malicious software. | [Download](https://practicalmalwareanalysis.com/fakenet/) |
-| **`Volatility`** | An advanced memory forensics framework. | [github](https://github.com/volatilityfoundation/volatility) |
-| **`LiME`** | A Loadable Kernel Module (LKM) which allows for volatile memory acquisition from Linux and Linux-based devices. | [github](https://github.com/504ensicsLabs/LiME) |
-| **`Cuckoo`** | Cuckoo Sandbox is the leading open source automated malware analysis system. | [Download](https://cuckoosandbox.org/) |
-| **`Objective-See Utilities`** | Free Mac Security Tools | [Download](https://objective-see.com/products.html) |
-| **`XCode Instruments`** | XCode Instruments for Monitoring Files and Processes User Guide. | [Download](https://developer.apple.com/xcode/download/) |
-| **`fs_usage`** | report system calls and page faults related to filesystem activity in real-time. File I/O: fs_usage -w -f filesystem. | [Download](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/fs_usage.1.html) |
-| **`dmesg`** | display the system message buffer. | [Download](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/dmesg.8.html) |
+| **`Process Explorer v16.42`** | O Process Explorer mostra informações sobre quais identificadores e DLLs os processos abriram ou carregaram. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) |
+| **`Process Monitor v3.82`** | O Process Monitor é uma ferramenta de monitoramento avançada para Windows que mostra o sistema de arquivos em tempo real, o Registro e a atividade de processos/threads. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) |
+| **`Autoruns para Windows v13.100`** | Este utilitário, que tem o conhecimento mais abrangente de locais de inicialização automática de qualquer monitor de inicialização. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns) |
+| **`Noriben`** | Noriben é um script baseado em Python que funciona em conjunto com o Sysinternals Procmon para coletar, analisar e relatar automaticamente indicadores de tempo de execução de malware. | [github](https://github.com/Rurik/Noriben) |
+| **`API Monitor`** | O API Monitor é um software gratuito que permite monitorar e controlar chamadas de API feitas por aplicativos e serviços. | [Download](http://www.rohitab.com/apimonitor) |
+| **`INetSim`** | INetSim é um conjunto de software para simular serviços comuns de internet em um ambiente de laboratório, por exemplo, para analisar o comportamento de rede de amostras de malware desconhecidas. | [Download](https://www.inetsim.org/) |
+| **`SmartSniff`** | O SmartSniff é um utilitário de monitoramento de rede que permite capturar pacotes TCP/IP que passam pelo seu adaptador de rede. | [Download](http://www.nirsoft.net/utils/smsniff.html) |
+| **`TCPView`** | O TCPView é um programa do Windows que mostrará listagens detalhadas de todos os pontos de extremidade TCP e UDP no seu sistema, incluindo os endereços locais e remotos e o estado das conexões TCP. | [Download](https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview) |
+| **`Wireshark`** | O Wireshark é o analisador de protocolo de rede mais utilizado e mais importante do mundo. | [Download](https://www.wireshark.org/download.html) |
+| **`Fakenet`** | FakeNet é uma ferramenta que auxilia na análise dinâmica de software malicioso. | [Download](https://practicalmalwareanalysis.com/fakenet/) |
+| **`Volatility`** | Uma estrutura avançada de análise forense de memória. | [github](https://github.com/volatilityfoundation/volatility) |
+| **`LiME`** | Um Módulo Kernel Carregável (LKM) que permite a aquisição de memória volátil de dispositivos Linux e baseados em Linux. | [github](https://github.com/504ensicsLabs/LiME) |
+| **`Cuckoo`** | O Cuckoo Sandbox é o principal sistema de análise automatizada de malware de código aberto. | [Download](https://cuckoosandbox.org/) |
+| **`Objective-See Utilities`** | Ferramentas de segurança gratuitas para Mac | [Download](https://objective-see.com/products.html) |
+| **`XCode Instruments`** | Guia do usuário do XCode Instruments para monitoramento de arquivos e processos. | [Download](https://developer.apple.com/xcode/download/) |
+| **`fs_usage`** | relata chamadas de sistema e falhas de página relacionadas à atividade do sistema de arquivos em tempo real. E/S de arquivo: fs_usage -w -f filesystem. | [Download](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/fs_usage.1.html) |
+| **`dmesg`** | exibe o buffer de mensagens do sistema. | [Download](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/dmesg.8.html) |
 
-## 📚 Document Analysis
-<i>Document Analysis Tools</i>
+## 📚 Análise de Documentos
+<i>Ferramentas de análise de documentos</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`Ole Tools`** | python-oletools is a package of python tools to analyze Microsoft OLE2 files. | [Download](http://www.decalage.info/python/oletools) |
-| **`Didier's PDF Tools`** | This tool will parse a PDF document to identify the fundamental elements used in the analyzed file. | [Download](https://blog.didierstevens.com/programs/pdf-tools/) |
-| **`Origami`** | Origami is a Ruby framework designed to parse, analyze, and forge PDF documents. | [github](https://github.com/cogent/origami-pdf) |
+| **`Ole Tools`** | python-oletools é um pacote de ferramentas python para analisar arquivos Microsoft OLE2. | [Download](http://www.decalage.info/python/oletools) |
+| **`Ferramentas de PDF do Didier`** | Esta ferramenta analisará um documento PDF para identificar os elementos fundamentais usados ​​no arquivo analisado. | [Download](https://blog.didierstevens.com/programs/pdf-tools/) |
+| **`Origami`** | Origami é um framework Ruby projetado para analisar, analisar e forjar documentos PDF. | [github](https://github.com/cogent/origami-pdf) |
 
-## 🔗 Scripting
-<i>Scripting</i>
+## 🔗 Roteiro
+<i>Script</i>
 
-| Name  | Descriptions | Download | 
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`IDA Python Src`** | IDAPython project for Hex-Ray's IDA Pro. | [github](https://github.com/idapython/src) |
-| **`IDC Functions Doc`** | The following conventions are used in the function descriptions. | [Download](https://hex-rays.com/products/ida/support/idadoc/162.shtml) |
-| **`IDA Plugin Contest`** | Hex-Rays Plugin Contest 2021 is now officially started. | [Download](https://hex-rays.com/contests/) |
-| **`onehawt IDA Plugin List`** | A list of IDA Plugins. | [github](https://github.com/onethawt/idaplugins-list) |
-| **`pefile`** | pefile is a multi-platform Python module to parse and work with Portable Executable (PE) files. Most of the information contained in the PE file headers is accessible, as well as all the sections' details and data. | [github](https://github.com/erocarrera/pefile) |
+| **`IDA Python Src`** | Projeto IDAPython para o IDA Pro da Hex-Ray. | [github](https://github.com/idapython/src) |
+| **`IDC Functions Doc`** | As seguintes convenções são usadas nas descrições de funções. | [Download](https://hex-rays.com/products/ida/support/idadoc/162.shtml) |
+| **`Concurso de plugins IDA`** | O concurso de plugins Hex-Rays 2021 começou oficialmente. | [Download](https://hex-rays.com/contests/) |
+| **`Lista de plugins IDA do onehawt`** | Uma lista de plugins IDA. | [github](https://github.com/onethawt/idaplugins-list) |
+| **`pefile`** | pefile é um módulo Python multiplataforma para analisar e trabalhar com arquivos Portable Executable (PE). A maioria das informações contidas nos cabeçalhos dos arquivos PE é acessível, assim como todos os detalhes e dados das seções. | [github](https://github.com/erocarrera/pefile) |
 
-## 💻 Mac Decrypt
-| Name  | Descriptions | Download | 
+## 💻 Mac Descriptografar
+| Nome | Descrições | Download |
 | ----- | ------------ | -------- |
-| **`Cerbero Profiler`** | While this PoC is about static analysis, it’s very different than applying a packer to a malware. | [Download](https://cerbero-blog.com/?p=1311) |
-| **`AppEncryptor`**| A command-line tool to apply or remove Apple Binary Protection from an application. | [github](https://github.com/AlanQuatermain/appencryptor) |
-| **`Class-dump`** | This is a command-line utility for examining the Objective-C runtime information stored in Mach-O files. | [Download](http://stevenygard.com/projects/class-dump/) |
-| **`readmem`** | A small OS X/iOS userland util to dump processes memory. | [github](https://github.com/gdbinit/readmem) |
+| **`Cerbero Profiler`** | Embora este PoC seja sobre análise estática, é muito diferente de aplicar um compactador a um malware. | [Download](https://cerbero-blog.com/?p=1311) |
+| **`AppEncryptor`**| Uma ferramenta de linha de comando para aplicar ou remover a Apple Binary Protection de um aplicativo. | [github](https://github.com/AlanQuatermain/appencryptor) |
+| **`Class-dump`** | Este é um utilitário de linha de comando para examinar as informações de tempo de execução do Objective-C armazenadas em arquivos Mach-O. | [Download](http://stevenygard.com/projects/class-dump/) |
+| **`readmem`** | Um pequeno utilitário de userland do OS X/iOS para despejar memória de processos. | [github](https://github.com/gdbinit/readmem) |
 
-## 📔 Reverse Engineering Books
+## 📔 Livros de Engenharia Reversa
 
-| Name  | Descriptions |
+| Nome | Descrições |
 | ----- | ------------ |
-| **`The IDA Pro Book`**  | [Description](http://amzn.to/2jTicOg)  |
-| **`Radare2 Book`**  | [github page](https://www.gitbook.com/book/radare/radare2book/details)  |
-| **`Reverse Engineering for Beginners`** | [Description](http://beginners.re/) |
-| **`The Art of Memory Forensics`** | [Description](http://amzn.to/2jMJQs0) |
-| **`Art of Software Security Assessment`** | [Description](http://amzn.to/2jlvtyt) |
-| **`iOS Reverse Engineering`** | [Description](https://github.com/iosre/iOSAppReverseEngineering) |
+| **`The IDA Pro Book`** | [Descrição](http://amzn.to/2jTicOg) |
+| **`Livro Radare2`** | [página do github](https://www.gitbook.com/book/radare/radare2book/details) |
+| **`Engenharia reversa para iniciantes`** | [Descrição](http://beginners.re/) |
+| **`A Arte da Memória Forense`** | [Descrição](http://amzn.to/2jMJQs0) |
+| **`Arte da Avaliação de Segurança de Software`** | [Descrição](http://amzn.to/2jlvtyt) |
+| **`Engenharia reversa do iOS`** | [Descrição](https://github.com/iosre/iOSAppReverseEngineering) |
 
-# 📎 Target and Practice
+# 📎 Alvo e Prática
 
-| Name  | Descriptions |
+| Nome | Descrições |
 | ----- | ----------- |
-| **`OSX Crackmes`** | [Description](https://reverse.put.as/crackmes/) |
-| **`ESET Challenges`** | [Description](http://www.joineset.com/jobs-analyst.html) |
-| **`Flare-on Challenges`** | [Description](http://flare-on.com/) |
-| **`Github CTF Archives`** | [github page](http://github.com/ctfs/) |
-| **`Reverse Engineering Challenges`** | [Description](http://challenges.re/) |
-| **`Malware Blacklist`** | [Description](http://www.malwareblacklist.com/showMDL.php) |
-| **`malwr.com`** | [Description](https://malwr.com/) |
+| **`OSX Crackmes`** | [Descrição](https://reverse.put.as/crackmes/) |
+| **`Desafios da ESET`** | [Descrição](http://www.joineset.com/jobs-analyst.html) |
+| **`Desafios do Flare-on`** | [Descrição](http://flare-on.com/) |
+| **`Arquivos CTF do Github`** | [página do github](http://github.com/ctfs/) |
+| **`Desafios da Engenharia Reversa`** | [Descrição](http://challenges.re/) |
+| **`Lista Negra de Malware`** | [Descrição](http://www.malwareblacklist.com/showMDL.php) |
+| **`malwr.com`** | [Descrição](https://malwr.com/) |
 
-## License
+## Licença
 
-Released under [MIT](/LICENSE) by [@xiosec](https://github.com/xiosec).
+Lançado sob [MIT](/LICENSE) por [@xiosec](https://github.com/xiosec).
